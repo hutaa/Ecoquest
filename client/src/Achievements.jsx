@@ -8,6 +8,7 @@ export default function Achievements() {
   return (
     <div>
       <CreateButton />
+      <p>Points</p>
     </div>
   );
 }
