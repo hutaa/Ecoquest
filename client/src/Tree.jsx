@@ -1,4 +1,5 @@
 import "./App.css";
+import Header from './Header';
 
 function GetNextUpkeepGoal(curr_upkeep)
 {
