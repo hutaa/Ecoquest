@@ -1,17 +1,12 @@
 import "./App.css";
 
-function Achievements() {
-  eventListener();
+export default function Achievements() {
   return (
     <div>
-    <CreateButton />
+      <CreateButton />
     </div>
   );
-  
 }
-
-export default Achievements;
-
 
 function CreateButton() {
   return (
@@ -24,20 +19,38 @@ function CreateButton() {
   );
 }
 
-
 function pointSystem(name)
 {
-  points = 0
-  if (name == "stairs")
-    points = 10;
-  else if (name == "plant")
-    points = 10;
-  else if (name == "bags")
-    points = 10;
-  else if (name == "recycle")
-    points = 10;
-  else if (name == "waste")
-    points = 10;
-  else if (name == "clothes")
-    points = 10;
+  var points = 0;
+  if (localStorage["points"])
+  {
+    points = Number(localStorage["points"]);
+  }
+
+  if (name === "stairs")
+  {
+    points += 10;
+  }
+  else if (name === "plant")
+  {
+    points += 10;
+  }
+  else if (name === "bags")
+  {
+    points += 10;
+  }
+  else if (name === "recycle")
+  {
+    points += 10;
+  }
+  else if (name === "waste")
+  {
+    points += 10;
+  }
+  else if (name === "clothes")
+  {
+    points += 10;
+  }
+
+  localStorage["points"] = "" + points;
 }
