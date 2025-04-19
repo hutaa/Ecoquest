@@ -1,7 +1,7 @@
 import "./App.css";
 import eQLogo from "./ecoquest_logo.png";
 import playBtn from "./play_btn.png";
-import Header from './Header';
+import './Header';
 
 const header = () => {
   return (

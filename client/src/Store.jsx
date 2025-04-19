@@ -1,5 +1,5 @@
 import "./App.css";
-import Header from './Header';
+import './Header';
 
 function Store() {
   return (

@@ -1,17 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
 :root {
-  --secondary-color: rgb(60, 165, 60);
+  --secondary-color: #73843d;
   --primary-color: rgb(255, 255, 255);
+  --font-main: 'Lilita One', cursive, sans-serif;
 }
 
 body {
   position: relative;
   background-color: white;
   text-align: center;
+  font-family: var(--font-main);
 }
 
 .page-container {
   position: absolute;
-
+  font-family: var(--font-main);
   display: flex;
   float: center;
   flex-direction: column;
@@ -71,7 +75,7 @@ body {
 }
 
 .text-box {
-  font-family: Arial, sans-serif;
+  font-family: var(--font-main);
   font-size: 16pt;
   font-weight: 300;
   text-align: left;
@@ -137,6 +141,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  font-family: var(--font-main);
 }
 
 .nav-icon {
@@ -156,6 +161,7 @@ body {
 .nav-item {
   display: flex;
   gap: 25px;
+  font-family: var(--font-main);
   align-items: center;
 }
 
@@ -212,4 +218,124 @@ body {
 .play img:hover {
   transform: scale(1.1);
   opacity: 0.85;
+}
+
+/* Achievements Page Styles */
+.achievements-page {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: calc(100vh - 4rem);
+}
+
+.achievements-title {
+  text-align: center;
+  color: var(--secondary-color);
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-family: var(--font-main);
+}
+
+.achievements-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.achievement-card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+}
+
+.achievement-button {
+  position: relative;
+  padding: 1.5rem 1rem;
+  margin: 0;
+  background-color: #73843d;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  color: #dcfb98;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  font-family: var(--font-main);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.achievement-button:hover {
+  background-color: #5a6b2c;
+}
+
+.points-badge {
+  background-color: #dcfb98;
+  color: #73843d;
+  border-radius: 20px;
+  padding: 0.2rem 0.8rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.points-display {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  color: #dcfb98;
+  font-weight: bold;
+  background-color: #73843d; /* Earthy green */
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  display: inline-block;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 3px solid #5a6b2c; /* Darker green border */
+}
+
+#points-counter {
+  color: #dcfb98; /* Sunny yellow for contrast */
+  font-size: 2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  margin-left: 0.5rem;
+}
+
+/* Button Group Styles (Original) */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.button-group button {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #73843d;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  transition: background-color 0.2s;
 }
