@@ -5,7 +5,7 @@
 
 body {
   position: relative;
-  background-color: rgb(200, 215, 200);
+  background-color: white;
   text-align: center;
 }
 
@@ -105,21 +105,14 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.progress-bar {
-  border-radius: 15px;
-  border-width: 0px;
-
-  height: 100%;
-  width: 50%;
-  background-color: var(--secondary-color);
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
-
-.spacer {
-  width: 0%;
-  height: 50px;
-}
-
-
 
 .navbar{
   display: flex;
@@ -128,6 +121,8 @@ body {
   padding-top: 20px;
   align-items: center;
   position: relative;
+  height: auto;
+  z-index: 100;
 }
 
 .nav-container {
@@ -195,11 +190,9 @@ body {
   align-items: center;
 }
 
-.logo {
-  width: 250px; /* Adjust size of the logo */
-  height: auto;
-  margin-top: -200px;/* Move the logo up a bit */
-  margin-bottom: -300px;
+.logo-link {
+  display: flex;
+  align-items: center;
 }
 
 /* Style for the play button section */
