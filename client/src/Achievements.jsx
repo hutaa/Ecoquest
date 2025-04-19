@@ -15,7 +15,7 @@ export default Achievements;
 
 function CreateButton() {
   return (
-    <button name = "stairs" onClick = {pointSystem("stairs")}>Took the Stairs</button>,
+    <button name = "stairs" onClick = {pointSystem("stairs")}>Took the Stairs <img src = "InputButton.png"></img></button>,
     <button name = "plant" onClick = {pointSystem("plant")}>Planted a tree/plant</button>,
     <button name = "bags" onClick = {pointSystem("bags")}>Used reusable bags</button>,
     <button name = "recycle" onClick = {pointSystem("recycle")}>Recycled/composted</button>,
