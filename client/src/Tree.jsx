@@ -1,4 +1,5 @@
 import "./App.css";
+import './Header';
 
 function GetTimestampInSeconds()
 {
@@ -92,6 +93,10 @@ function Tree()
   {
     progress_text = (next_goal - curr_upkeep) + " upkeep until level " + (GetCurrentLevel(curr_upkeep) + 1);
   }
+
+  setTimeout(function(){
+    window.location.replace("/tree");
+  }, 1000);
 
   return (
     <div className="page-container">
