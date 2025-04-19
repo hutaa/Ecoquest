@@ -8,26 +8,16 @@ function GetTimestampInSeconds()
 
 function GetNextUpkeepGoal(curr_upkeep)
 {
-  if (curr_upkeep < 10)
-  {
-    return 10;
-  }
-  else if (curr_upkeep < 25)
-  {
-    return 25;
-  }
-  else if (curr_upkeep < 50)
-  {
-    return 50;
-  }
-  else if (curr_upkeep < 100)
-  {
-    return 100;
-  }
-  else
-  {
-    return -1;
-  }
+  if (curr_upkeep < 10) return 10;
+
+  else if (curr_upkeep < 25) return 25;
+
+  else if (curr_upkeep < 50)  return 50;
+
+  else if (curr_upkeep < 100) return 100;
+
+  else return -1;
+
 }
 
 function GetCurrentLevel(curr_upkeep)
@@ -91,12 +81,10 @@ function Tree()
   }
   else
   {
-    progress_text = (next_goal - curr_upkeep) + " upkeep until level " + (GetCurrentLevel(curr_upkeep) + 1);
+    progress_text = "\n" + (next_goal - curr_upkeep) + " upkeep until level " + (GetCurrentLevel(curr_upkeep) + 1);
   }
 
-  setTimeout(function(){
-    window.location.replace("/tree");
-  }, 1000);
+  
 
   return (
     <div className="page-container">

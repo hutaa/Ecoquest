@@ -26,7 +26,7 @@ body {
   justify-content: center;
   width: 100vw;
   min-height: 100vh;
-  top: 0;
+  top: 20px;
   left: 0;
   right: 0;
 
@@ -45,7 +45,7 @@ body {
   width: 100%;
   margin-left: 0px;
   margin-right: 0px;
-  min-height: 550px;
+  min-height: 400px;
 }
 
 .tree-image {
@@ -80,7 +80,7 @@ body {
   font-size: 16pt;
   font-weight: 300;
   text-align: left;
-  color: rgb(0, 0, 0);
+  color: var(--secondary-color);
   background-color: rgba(0, 0, 0, 0);
 }
 
@@ -104,10 +104,15 @@ body {
 .progress-bar-container {
   border-radius: 15px;
   border-width: 2px;
-
   height: 30px;
   width: 50%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #b2aeae;
+}
+.progress-bar{
+  border-radius: 15px;
+  border-width: 0px;
+  height: 30px;
+  background-color: #c8ff50;
 }
 
 @keyframes App-logo-spin {
@@ -123,7 +128,7 @@ body {
   display: flex;
   padding: 10px 30px;
   justify-content: center;
-  padding-top: 20px;
+  margin-top: -20px;
   align-items: center;
   position: relative;
   height: auto;
