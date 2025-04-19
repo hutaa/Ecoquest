@@ -16,11 +16,11 @@ export default Achievements;
 function CreateButton() {
   return (
     <button name = "stairs" onClick = {pointSystem("stairs")}>Took the Stairs <img src = "InputButton.png"></img></button>,
-    <button name = "plant" onClick = {pointSystem("plant")}>Planted a tree/plant</button>,
-    <button name = "bags" onClick = {pointSystem("bags")}>Used reusable bags</button>,
-    <button name = "recycle" onClick = {pointSystem("recycle")}>Recycled/composted</button>,
-    <button name = "waste" onClick = {pointSystem("waste")}>Limited food waste</button>,
-    <button name = "clothes" onClick = {pointSystem("clothes")}>Donated clothes</button>
+    <button name = "plant" onClick = {pointSystem("plant")}>Planted a tree/plant <img src = "InputButton.png"></img></button>,
+    <button name = "bags" onClick = {pointSystem("bags")}>Used reusable bags <img src = "InputButton.png"></img></button>,
+    <button name = "recycle" onClick = {pointSystem("recycle")}>Recycled/composted <img src = "InputButton.png"></img></button>,
+    <button name = "waste" onClick = {pointSystem("waste")}>Limited food waste <img src = "InputButton.png"></img></button>,
+    <button name = "clothes" onClick = {pointSystem("clothes")}>Donated clothes <img src = "InputButton.png"></img></button>
   );
 }
 
