@@ -36,3 +36,103 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar{
+  display: flex;
+  padding: 10px 30px;
+  justify-content: center;
+  padding-top: 20px;
+  align-items: center;
+  position: relative;
+}
+
+.nav-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Remove default list styling */
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-icon {
+  position: absolute;
+  left: 20px;
+  width: 40px;
+  height: auto;
+  margin-left: 20px;
+}
+
+.nav-icon:hover {
+  transform: scale(1.1);
+  opacity: 0.85;
+}
+
+/* Arrange nav items horizontally */
+.nav-item {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.nav-item img {
+  width: 150px; 
+  cursor: pointer;
+}
+
+/* Hover effects */
+.nav-item img:hover {
+  transform: scale(1.1);
+  opacity: 0.85;
+}
+
+/* Optional: Add spacing between items */
+.nav-item a {
+  display: inline-block;
+}
+
+/* Ecoquest Logo Styling */
+.homePage {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Start from the top (navbar will remain at the top) */
+}
+
+.ecoquestLogo {
+  flex: 1; /* Take remaining space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 250px; /* Adjust size of the logo */
+  height: auto;
+  margin-top: -200px;/* Move the logo up a bit */
+  margin-bottom: -300px;
+}
+
+/* Style for the play button section */
+.play {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 200px; /* Optional to provide more space below the play button */
+}
+
+.playBtn {
+  width: 200px; /* Adjust size of the play button */
+  height: auto;
+  cursor: pointer;
+}
+
+.play img:hover {
+  transform: scale(1.1);
+  opacity: 0.85;
+}
