@@ -26,7 +26,12 @@ function GetNextUpkeepGoal(curr_upkeep)
 
 function Tree()
 {
-  var curr_upkeep = 5;
+  var curr_upkeep = 0;
+  if (localStorage["points"])
+  {
+    curr_upkeep = Number(localStorage["points"]);
+  }
+  
   var next_goal = GetNextUpkeepGoal(curr_upkeep);
 
   var progress = curr_upkeep/next_goal;
