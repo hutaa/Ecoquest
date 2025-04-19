@@ -5,7 +5,7 @@ import Header from "./Header";
 import Home from "./Home";
 import Tree from "./Tree";
 import Achievements from "./Achievements";
-import Home from "./Store";
+import Store from "./Store";
 
 function App() {
   return (
